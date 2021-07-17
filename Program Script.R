@@ -48,7 +48,7 @@ SNP_50_UNa_T2DM <- merge(x=E1_UNa_SNPs_datainput, y=O2_T2DM_2018, by.x = "NSNP",
 
 
 #Harmonization####
-#Variable names£¬adjust beta, effective allele£¬change the valuence of beta according to effective allele
+#Variable namesÂ£Â¬adjust beta, effective alleleÂ£Â¬change the valuence of beta according to effective allele
 #Identify variants that do not share the same allele pair between datasets, and either correct this if possible or eliminate such variants
 SNP_50_UNa_T2DM <- SNP_50_UNa_T2DM %>%
   mutate(effective_allele = ALLELE1,
@@ -796,7 +796,7 @@ SNP_T2DM_GUNa <- merge(x=T2DM_SNP, y=E1_UNa_GWAS, by.x = "SNP", by.y = "SNP", al
 
 
 #Harmonization####
-#Variable names£¬adjust beta, effective allele£¬change the valuence of beta according to effective allele
+#Variable namesÂ£Â¬adjust beta, effective alleleÂ£Â¬change the valuence of beta according to effective allele
 #Identify variants that do not share the same allele pair between datasets, and either correct this if possible or eliminate such variants
 SNP_T2DM_GUNa <- SNP_T2DM_GUNa %>%
   mutate(effective_allele =allele1,
